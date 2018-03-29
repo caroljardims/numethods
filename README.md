@@ -1,4 +1,4 @@
 # numethods
 
-Repositório contendo material auxiliar para a disciplina de Métodos Numéricos, ou Cálculo Numrico.
+Repositório contendo material auxiliar para a disciplina de Métodos Numéricos, ou Cálculo Numérico.
 Enjoy it. :)
