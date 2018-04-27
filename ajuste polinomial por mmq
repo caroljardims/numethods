@@ -1,0 +1,34 @@
+ajuste polinomial por mmq
+
+generalizando o procedimento visto anteriormente, escrevemos g(x) com uma
+combinação lienar de funções, como segue:
+
+g(x) = a1g1(x)+a2g2(x)+...+angn(x)
+
+procedendo de forma análoga ao ajuste lenar, queremos encontrar os parâmetros
+
+ai, i=1, n tais que tornam mínima a função
+
+E(a1,...,an) = x: for i in range(1,m) { x += ((f(xi)-g(xi))^2) }
+
+para isso, procuramos a1,...,an tal que
+
+f'(a1) = f'(a2) = ... = f'(an) = 0
+
+o que leva a busca da solução do seguinte sistema linear:
+
+| (x: for i in range(1,m) { x += (g1(xi)f(xi)) }) 
+| (x: for i in range(1,m) { x += (g2(xi)f(xi)) }) 
+| ... 
+| (x: for i in range(1,m) { x += (gn(xi)f(xi)) }) 
+
+ou, de forma compacta, 
+
+| sum(g1g1)sum(g1g2)...sum(g1gn)||a1 |   |sum(g1y)|  
+| sum(g2g1)sum(g2g2)...sum(g2gn)||a2 |   |sum(g2y)|
+| ...							||...| = |...     |
+| sum(gng1)sum(gng2)...sum(gngn)||a3 |   |sum(gny)|
+
+g(x) = a1x^3 + a2x^2 + a3x + a4
+
+códigos na pasta :)
